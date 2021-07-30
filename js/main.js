@@ -37,8 +37,8 @@ var newStudent = {};
 
 
 newStudent.nome = prompt("Inserisci nome");
-newStudent.cognome = prompt("Inserisci cognome")
-newStudent.eta = prompt("Inserisci eta")
+newStudent.cognome = prompt("Inserisci cognome");
+newStudent.eta = parseInt(prompt("Inserisci eta"));
 console.log(newStudent);
 
 studenti.push(newStudent);
