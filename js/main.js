@@ -6,8 +6,8 @@ var studente = {
     eta : 27
 }
 //Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
-for (var contenuto in studente) {
-    document.writeln(studente[contenuto]);
+for (var key in studente) {
+    document.writeln(studente[key]);
 }
 //Creare un array di oggetti di studenti.
 var studenti = [
@@ -28,5 +28,8 @@ var studenti = [
     }
 ];
 //Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+for (var i = 0; i < studenti.length; i++) {
+    console.log(studenti[i]["nome"] + studenti[i]["cognome"]);
+}
 
 //Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
